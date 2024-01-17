@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * CNTechnoLabs
+ * Copyright (C) 2021 CNTechnoLabs 
+ *
+ * @category  CNTechnoLabs
+ * @package   CNTechnoLabs_Core
+ * @copyright Copyright (c) 2021 CNTechnoLabs
+ * @license   http://opensource.org/licenses/gpl-3.0.html GNU General Public License,version 3 (GPL-3.0)
+ * @author    CNTechnoLabs
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="CNTechnoLabs_Core::cn_root"
+            title="CNTechnoLabs"
+            module="CNTechnoLabs_Core"
+            sortOrder="45"
+            resource="CNTechnoLabs_Core::root" />
+
+            <add id="CNTechnoLabs_Core::cn_modules"
+                title="Modules"
+                module="CNTechnoLabs_Core"
+                sortOrder="10"
+                parent="CNTechnoLabs_Core::cn_root"
+                resource="CNTechnoLabs_Core::cn_modules" />
+            
+    </menu>
+</config>
